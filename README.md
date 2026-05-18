@@ -1,2 +1,2 @@
 # DecodeLabs-Internship
-Project made in remote internship in DecodeLabs.
+Project made for remote internship at DecodeLabs.
