@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet Iron Peak Fitness trainers, elite specialists in strength, HIIT, yoga, combat, and nutrition who deliver world-class results.">
+  <meta property="og:title" content="Iron Peak Fitness | Trainers">
+  <meta property="og:description" content="Meet Iron Peak Fitness trainers, elite specialists in strength, HIIT, yoga, combat, and nutrition who deliver world-class results.">
+  <meta property="og:image" content="images/og-image.jpg">
+  <link rel="canonical" href="https://yoursite.com/trainers.html">
+  <title>Iron Peak Fitness | Trainers</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/pages/trainers.css">
+</head>
+<body>
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <div id="progress-bar"></div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo">Iron<span>Peak</span></a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="trainers.html" class="active">Trainers</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="auth.html" class="nav-cta">Join Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">
+      <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+    </button>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="classes.html">Classes</a>
+    <a href="trainers.html" class="active">Trainers</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html">Contact</a>
+    <a href="auth.html">Join Now</a>
+  </nav>
+
+  <main id="main">
+    <section class="hero">
+      <div class="diag-lines"></div>
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="hero-bg-text">TRAINERS</div>
+      <div class="hero-content">
+        <div class="breadcrumb">
+          <a href="index.html">Home</a><span>/</span>Trainers
+        </div>
+        <h1 class="hero-title">
+          <span class="line1">MEET THE</span>
+          <span class="line2">LEGENDS</span>
+        </h1>
+        <p class="hero-subtitle">World-class coaches. Real results. Zero excuses.</p>
+      </div>
+      <div class="scroll-hint">Scroll<div class="scroll-dot"></div></div>
+    </section>
+
+    <div class="stats-bar">
+      <div class="stats-bar-inner">
+        <div class="stat-item">
+          <span class="stat-number" data-target="28">0</span>
+          <div class="stat-label">Elite Trainers</div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="6">0</span>
+          <div class="stat-label">Specializations</div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="1200" data-suffix="+">0</span>
+          <div class="stat-label">Transformations</div>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="4" data-decimal=".9*">0</span>
+          <div class="stat-label">Avg Rating</div>
+        </div>
+      </div>
+    </div>
+
+    <section class="filter-section">
+      <div class="section-label reveal-up" style="justify-content:center">Our Team</div>
+      <div class="filter-buttons" role="group" aria-label="Filter trainers by specialty">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="strength">Strength</button>
+        <button class="filter-btn" data-filter="yoga">Yoga</button>
+        <button class="filter-btn" data-filter="hiit">HIIT</button>
+        <button class="filter-btn" data-filter="crossfit">CrossFit</button>
+        <button class="filter-btn" data-filter="nutrition">Nutrition</button>
+        <button class="filter-btn" data-filter="combat">Combat</button>
+      </div>
+    </section>
+
+    <section class="trainers-section">
+      <div class="trainers-grid" id="trainers-grid">
+        <div class="trainer-card" data-specialty="strength" data-index="0" data-name="Marcus Cole" data-role="Co-Founder" data-specialty-label="Strength and Power" data-experience="8 yrs" data-clients="240+" data-rating="4.9*" data-bio="Marcus transforms athletes through precision programming and relentless intensity. His methodology blends powerlifting fundamentals with modern sports science.">
+          <div class="trainer-photo grad-1">
+            <div class="trainer-photo-bg"></div>
+            <i class="fa-solid fa-person trainer-icon" aria-hidden="true"></i>
+            <div class="photo-overlay"></div>
+            <div class="specialty-badge">Strength</div>
+            <div class="social-links">
+              <a class="social-link" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+              <a class="social-link" href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+            </div>
+            <div class="role-strip">Co-Founder</div>
+          </div>
+          <div class="trainer-info">
+            <div class="trainer-name">Marcus Cole</div>
+            <div class="trainer-specialty">Strength &amp; Power</div>
+            <div class="trainer-bio">Marcus transforms athletes through precision programming and relentless intensity. His methodology blends powerlifting fundamentals with modern sports science.</div>
+            <div class="trainer-stats">
+              <div class="trainer-stat"><span class="val">8 yrs</span><span class="lbl">Experience</span></div>
+              <div class="trainer-stat"><span class="val">240+</span><span class="lbl">Clients</span></div>
+              <div class="trainer-stat"><span class="val">4.9*</span><span class="lbl">Rating</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trainer-card" data-specialty="yoga" data-index="1" data-name="Aria Sharma" data-role="Head Yoga Coach" data-specialty-label="Yoga and Mindfulness" data-experience="10 yrs" data-clients="180+" data-rating="5.0*" data-bio="Aria weaves ancient yogic wisdom with contemporary wellness science. Her classes leave students stronger in body and quieter in mind.">
+          <div class="trainer-photo grad-2">
+            <div class="trainer-photo-bg"></div>
+            <i class="fa-solid fa-person trainer-icon" aria-hidden="true"></i>
+            <div class="photo-overlay"></div>
+            <div class="specialty-badge">Yoga</div>
+            <div class="social-links">
+              <a class="social-link" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+              <a class="social-link" href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+            </div>
+            <div class="role-strip">Head Yoga Coach</div>
+          </div>
+          <div class="trainer-info">
+            <div class="trainer-name">Aria Sharma</div>
+            <div class="trainer-specialty">Yoga &amp; Mindfulness</div>
+            <div class="trainer-bio">Aria weaves ancient yogic wisdom with contemporary wellness science. Her classes leave students stronger in body and quieter in mind.</div>
+            <div class="trainer-stats">
+              <div class="trainer-stat"><span class="val">10 yrs</span><span class="lbl">Experience</span></div>
+              <div class="trainer-stat"><span class="val">180+</span><span class="lbl">Clients</span></div>
+              <div class="trainer-stat"><span class="val">5.0*</span><span class="lbl">Rating</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trainer-card" data-specialty="hiit crossfit" data-index="2" data-name="Zara Knox" data-role="CrossFit Lead" data-specialty-label="CrossFit and HIIT" data-experience="5 yrs" data-clients="210+" data-rating="4.8*" data-bio="Zara turns ordinary workouts into extraordinary breakthroughs. Her CrossFit programming has redefined what members think is possible.">
+          <div class="trainer-photo grad-3">
+            <div class="trainer-photo-bg"></div>
+            <i class="fa-solid fa-person trainer-icon" aria-hidden="true"></i>
+            <div class="photo-overlay"></div>
+            <div class="specialty-badge">CrossFit</div>
+            <div class="social-links">
+              <a class="social-link" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+              <a class="social-link" href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+            </div>
+            <div class="role-strip">CrossFit Lead</div>
+          </div>
+          <div class="trainer-info">
+            <div class="trainer-name">Zara Knox</div>
+            <div class="trainer-specialty">CrossFit &amp; HIIT</div>
+            <div class="trainer-bio">Zara turns ordinary workouts into extraordinary breakthroughs. Her CrossFit programming has redefined what members think is possible.</div>
+            <div class="trainer-stats">
+              <div class="trainer-stat"><span class="val">5 yrs</span><span class="lbl">Experience</span></div>
+              <div class="trainer-stat"><span class="val">210+</span><span class="lbl">Clients</span></div>
+              <div class="trainer-stat"><span class="val">4.8*</span><span class="lbl">Rating</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trainer-card" data-specialty="nutrition" data-index="3" data-name="Leon Voss" data-role="Co-Founder" data-specialty-label="Nutrition" data-experience="7 yrs" data-clients="155+" data-rating="4.9*" data-bio="Leon decodes the science of eating to fuel peak performance. His individualized nutrition plans are the secret weapon behind Iron Peak's best transformations.">
+          <div class="trainer-photo grad-4">
+            <div class="trainer-photo-bg"></div>
+            <i class="fa-solid fa-person trainer-icon" aria-hidden="true"></i>
+            <div class="photo-overlay"></div>
+            <div class="specialty-badge">Nutrition</div>
+            <div class="social-links">
+              <a class="social-link" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+              <a class="social-link" href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+            </div>
+            <div class="role-strip">Co-Founder</div>
+          </div>
+          <div class="trainer-info">
+            <div class="trainer-name">Leon Voss</div>
+            <div class="trainer-specialty">Nutrition</div>
+            <div class="trainer-bio">Leon decodes the science of eating to fuel peak performance. His individualized nutrition plans are the secret weapon behind Iron Peak's best transformations.</div>
+            <div class="trainer-stats">
+              <div class="trainer-stat"><span class="val">7 yrs</span><span class="lbl">Experience</span></div>
+              <div class="trainer-stat"><span class="val">155+</span><span class="lbl">Clients</span></div>
+              <div class="trainer-stat"><span class="val">4.9*</span><span class="lbl">Rating</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trainer-card" data-specialty="combat" data-index="4" data-name="Damon Pierce" data-role="MMA and Boxing" data-specialty-label="Combat Sports" data-experience="6 yrs" data-clients="130+" data-rating="4.7*" data-bio="Damon brings pro-fighter discipline to every session. From beginners to competitive athletes, his combat conditioning builds toughness inside and out.">
+          <div class="trainer-photo grad-5">
+            <div class="trainer-photo-bg"></div>
+            <i class="fa-solid fa-person trainer-icon" aria-hidden="true"></i>
+            <div class="photo-overlay"></div>
+            <div class="specialty-badge">Combat</div>
+            <div class="social-links">
+              <a class="social-link" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+              <a class="social-link" href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+            </div>
+            <div class="role-strip">MMA &amp; Boxing</div>
+          </div>
+          <div class="trainer-info">
+            <div class="trainer-name">Damon Pierce</div>
+            <div class="trainer-specialty">Combat Sports</div>
+            <div class="trainer-bio">Damon brings pro-fighter discipline to every session. From beginners to competitive athletes, his combat conditioning builds toughness inside and out.</div>
+            <div class="trainer-stats">
+              <div class="trainer-stat"><span class="val">6 yrs</span><span class="lbl">Experience</span></div>
+              <div class="trainer-stat"><span class="val">130+</span><span class="lbl">Clients</span></div>
+              <div class="trainer-stat"><span class="val">4.7*</span><span class="lbl">Rating</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trainer-card" data-specialty="hiit" data-index="5" data-name="Selena Park" data-role="Cardio Specialist" data-specialty-label="HIIT and Cardio" data-experience="4 yrs" data-clients="175+" data-rating="4.8*" data-bio="Selena's high-energy HIIT sessions are legendary at Iron Peak. Her cardio protocols maximise calorie burn while preserving lean muscle at every fitness level.">
+          <div class="trainer-photo grad-6">
+            <div class="trainer-photo-bg"></div>
+            <i class="fa-solid fa-person trainer-icon" aria-hidden="true"></i>
+            <div class="photo-overlay"></div>
+            <div class="specialty-badge">HIIT</div>
+            <div class="social-links">
+              <a class="social-link" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+              <a class="social-link" href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+            </div>
+            <div class="role-strip">Cardio Specialist</div>
+          </div>
+          <div class="trainer-info">
+            <div class="trainer-name">Selena Park</div>
+            <div class="trainer-specialty">HIIT &amp; Cardio</div>
+            <div class="trainer-bio">Selena's high-energy HIIT sessions are legendary at Iron Peak. Her cardio protocols maximise calorie burn while preserving lean muscle at every fitness level.</div>
+            <div class="trainer-stats">
+              <div class="trainer-stat"><span class="val">4 yrs</span><span class="lbl">Experience</span></div>
+              <div class="trainer-stat"><span class="val">175+</span><span class="lbl">Clients</span></div>
+              <div class="trainer-stat"><span class="val">4.8*</span><span class="lbl">Rating</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trainer-card" data-specialty="strength" data-index="6" data-name="Rhys Calloway" data-role="Powerlifting Coach" data-specialty-label="Strength" data-experience="9 yrs" data-clients="200+" data-rating="4.9*" data-bio="Rhys has coached national-level powerlifters and weekend warriors alike with equal precision and care. His no-nonsense periodization builds the kind of strength that lasts a lifetime.">
+          <div class="trainer-photo grad-7">
+            <div class="trainer-photo-bg"></div>
+            <i class="fa-solid fa-person trainer-icon" aria-hidden="true"></i>
+            <div class="photo-overlay"></div>
+            <div class="specialty-badge">Strength</div>
+            <div class="social-links">
+              <a class="social-link" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+              <a class="social-link" href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+            </div>
+            <div class="role-strip">Powerlifting Coach</div>
+          </div>
+          <div class="trainer-info">
+            <div class="trainer-name">Rhys Calloway</div>
+            <div class="trainer-specialty">Strength</div>
+            <div class="trainer-bio">Rhys has coached national-level powerlifters and weekend warriors alike with equal precision and care. His no-nonsense periodization builds the kind of strength that lasts a lifetime.</div>
+            <div class="trainer-stats">
+              <div class="trainer-stat"><span class="val">9 yrs</span><span class="lbl">Experience</span></div>
+              <div class="trainer-stat"><span class="val">200+</span><span class="lbl">Clients</span></div>
+              <div class="trainer-stat"><span class="val">4.9*</span><span class="lbl">Rating</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="trainer-card" data-specialty="yoga" data-index="7" data-name="Nadia Osei" data-role="Wellness Expert" data-specialty-label="Yoga and Recovery" data-experience="6 yrs" data-clients="160+" data-rating="5.0*" data-bio="Nadia specialises in restorative yoga and active recovery protocols. Her holistic approach helps athletes perform longer and recover faster between sessions.">
+          <div class="trainer-photo grad-8">
+            <div class="trainer-photo-bg"></div>
+            <i class="fa-solid fa-person trainer-icon" aria-hidden="true"></i>
+            <div class="photo-overlay"></div>
+            <div class="specialty-badge">Yoga</div>
+            <div class="social-links">
+              <a class="social-link" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+              <a class="social-link" href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+            </div>
+            <div class="role-strip">Wellness Expert</div>
+          </div>
+          <div class="trainer-info">
+            <div class="trainer-name">Nadia Osei</div>
+            <div class="trainer-specialty">Yoga &amp; Recovery</div>
+            <div class="trainer-bio">Nadia specialises in restorative yoga and active recovery protocols. Her holistic approach helps athletes perform longer and recover faster between sessions.</div>
+            <div class="trainer-stats">
+              <div class="trainer-stat"><span class="val">6 yrs</span><span class="lbl">Experience</span></div>
+              <div class="trainer-stat"><span class="val">160+</span><span class="lbl">Clients</span></div>
+              <div class="trainer-stat"><span class="val">5.0*</span><span class="lbl">Rating</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="spotlight">
+      <div class="spotlight-grid">
+        <div class="spotlight-visual">
+          <div class="spotlight-orb"></div>
+          <div class="spotlight-diag"></div>
+          <i class="fa-solid fa-person spotlight-icon" aria-hidden="true"></i>
+          <div class="corner-bracket tl"></div>
+          <div class="corner-bracket tr"></div>
+          <div class="corner-bracket bl"></div>
+          <div class="corner-bracket br"></div>
+          <div class="achievement-badge">
+            <span class="badge-num">240+</span>
+            Lives Changed
+          </div>
+        </div>
+        <div class="spotlight-content">
+          <div class="section-label spotlight-label reveal-left">Trainer Spotlight</div>
+          <div class="spotlight-name reveal-left delay-1">Marcus<br>Cole</div>
+          <div class="spotlight-tag reveal-left delay-2">Head Trainer &amp; Co-Founder</div>
+          <p class="spotlight-lead reveal-up delay-2">"Strength is not built in a day - it is built day after day, with intention."</p>
+          <p class="spotlight-bio reveal-up delay-3">Marcus Cole has spent eight years engineering elite athletic performance at Iron Peak. Beginning as a competitive powerlifter, he channelled that experience into a coaching philosophy that fuses raw intensity with intelligent programming. He co-founded Iron Peak with the conviction that world-class training should be accessible to everyone - not just professional athletes.</p>
+          <ul class="achievements reveal-up delay-3">
+            <li>NSCA Certified Strength &amp; Conditioning Specialist</li>
+            <li>3x Regional Powerlifting Champion</li>
+            <li>Iron Peak Co-Founder &amp; Head Trainer since 2016</li>
+            <li>240+ clients with documented body composition improvements</li>
+          </ul>
+          <div class="certs reveal-up delay-4">
+            <span class="cert-pill">NSCA-CSCS</span>
+            <span class="cert-pill">USAW Level 2</span>
+            <span class="cert-pill">FMS Level 2</span>
+            <span class="cert-pill">Precision Nutrition</span>
+          </div>
+          <div class="spotlight-ctas reveal-up delay-5">
+            <a href="#" class="btn-primary">Book a Session</a>
+            <a href="#" class="btn-ghost">View Full Profile</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="philosophy">
+      <div class="section-label reveal-up" style="justify-content:center">In Their Words</div>
+      <h2 class="cta-title reveal-up delay-1" style="text-align:center;margin-top:.75rem;font-size:clamp(2.8rem,6vw,6rem)">Trainer <span class="cta-highlight">Philosophy</span></h2>
+      <div class="philosophy-grid">
+        <div class="quote-card reveal delay-1">
+          <span class="quote-mark">"</span>
+          <p class="quote-text">The bar doesn't care about your feelings. Push it anyway. Consistency is the only shortcut that actually works.</p>
+          <div class="quote-author">
+            <div class="author-avatar">MC</div>
+            <div>
+              <span class="author-name">Marcus Cole</span>
+              <span class="author-role">Strength &amp; Power</span>
+            </div>
+          </div>
+        </div>
+        <div class="quote-card reveal delay-2">
+          <span class="quote-mark">"</span>
+          <p class="quote-text">Your breath is your anchor. Come back to it - in practice, in performance, in life. Presence is the real strength.</p>
+          <div class="quote-author">
+            <div class="author-avatar">AS</div>
+            <div>
+              <span class="author-name">Aria Sharma</span>
+              <span class="author-role">Yoga &amp; Mindfulness</span>
+            </div>
+          </div>
+        </div>
+        <div class="quote-card reveal delay-3">
+          <span class="quote-mark">"</span>
+          <p class="quote-text">Every rep you finish when you want to quit is a vote for the person you're becoming. Cast enough votes and transformation is inevitable.</p>
+          <div class="quote-author">
+            <div class="author-avatar">ZK</div>
+            <div>
+              <span class="author-name">Zara Knox</span>
+              <span class="author-role">CrossFit &amp; HIIT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="booking-banner reveal">
+      <div class="booking-banner-stripe"></div>
+      <div class="booking-text">
+        <h3>Ready to train with the best?</h3>
+        <p>Book a free 30-minute consultation with any trainer - no commitment required.</p>
+      </div>
+      <div class="booking-ctas">
+        <a href="#" class="btn-primary">Book a Free Consultation</a>
+        <a href="pricing.html" class="btn-ghost">View Pricing</a>
+      </div>
+    </div>
+
+    <section class="cta-section">
+      <div class="cta-grid-bg"></div>
+      <div class="section-label cta-label reveal-up">Start Today</div>
+      <h2 class="cta-title reveal-up delay-1">Train With<br><span class="cta-highlight">The Best.</span></h2>
+      <p class="cta-subtitle reveal-up delay-2">Your transformation starts with the right coach.</p>
+      <div class="cta-buttons reveal-up delay-3">
+        <a href="#" class="btn-primary">Find My Trainer</a>
+        <a href="classes.html" class="btn-ghost">View All Classes</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">Iron<span>Peak</span></a>
+        <p>A premium fitness sanctuary for those who demand more from themselves and their training environment.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+          <a href="#" class="social-link" aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+          <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="classes.html">HIIT</a></li>
+          <li><a href="classes.html">Power Lifting</a></li>
+          <li><a href="classes.html">Yoga</a></li>
+          <li><a href="classes.html">CrossFit</a></li>
+          <li><a href="trainers.html">Personal Training</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="trainers.html">Our Trainers</a></li>
+          <li><a href="pricing.html">Membership</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="contact.html">14 Iron District</a></li>
+          <li><a href="contact.html">hello@ironpeak.com</a></li>
+          <li><a href="contact.html">+1 (555) 024 PEAK</a></li>
+          <li><a href="contact.html">Mon-Sun: 5AM - 11PM</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>(c) 2025 Iron Peak Fitness. All rights reserved.</p>
+      <p>Privacy Policy - Terms of Service</p>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-trainer-name">
+    <div class="modal" id="modal">
+      <div class="modal-visual grad-1">
+        <i class="fa-solid fa-person modal-icon" id="modal-icon" aria-hidden="true"></i>
+        <div class="corner-bracket tl"></div>
+        <div class="corner-bracket tr"></div>
+        <div class="corner-bracket bl"></div>
+        <div class="corner-bracket br"></div>
+        <button class="modal-close" id="modal-close" aria-label="Close"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+      </div>
+      <div class="modal-content">
+        <div class="modal-name" id="modal-trainer-name">Marcus Cole</div>
+        <span class="modal-specialty" id="modal-specialty">Strength &amp; Power</span>
+        <p class="modal-bio" id="modal-bio"></p>
+        <ul class="modal-achievements" id="modal-achievements"></ul>
+        <div class="modal-certs" id="modal-certs"></div>
+        <div class="schedule-grid" id="modal-schedule"></div>
+        <div class="modal-stats" id="modal-stats"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/filter.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/counter.js"></script>
+</body>
+</html>

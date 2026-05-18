@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sign in or create your Iron Peak Fitness account to manage your plan, sessions, and progress.">
+  <meta property="og:title" content="Iron Peak Fitness | Join Now">
+  <meta property="og:description" content="Sign in or create your Iron Peak Fitness account to manage your plan, sessions, and progress.">
+  <meta property="og:image" content="images/og-image.jpg">
+  <link rel="canonical" href="https://yoursite.com/auth.html">
+  <title>Iron Peak Fitness | Join Now</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/pages/auth.css">
+</head>
+<body>
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <div id="progress-bar"></div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="auth-header">
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Auth navigation">
+      <a href="index.html" class="nav-logo">Iron<span>Peak</span></a>
+      <a href="index.html" class="nav-cta">Back to Site</a>
+    </nav>
+  </header>
+
+  <main id="main" class="auth-layout">
+    <div class="left-panel">
+      <div class="diag-lines"></div>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="ghost-text">IRON</div>
+
+      <div class="stat-card stat-card-1">★ 4.9 / 5.0 — Member Rating</div>
+      <div class="stat-card stat-card-2">🏆 #1 Gym in the City</div>
+
+      <div class="left-content">
+        <div class="brand-headline">
+          <div>FORGE YOUR</div>
+          <div class="gradient-text">LEGEND</div>
+        </div>
+        <p class="brand-subtitle">"Join thousands of members who chose to become more."</p>
+
+        <ul class="benefit-list">
+          <li class="benefit-item">Access to all 45+ weekly classes</li>
+          <li class="benefit-item">Track your progress in real time</li>
+          <li class="benefit-item">Train with elite certified coaches</li>
+        </ul>
+
+        <div class="member-badge">
+          <div class="avatar-stack">
+            <div class="avatar-pip">AK</div>
+            <div class="avatar-pip">MR</div>
+            <div class="avatar-pip">JL</div>
+            <div class="avatar-pip">+</div>
+          </div>
+          <div class="badge-text">
+            2,400+ Active Members<br>
+            <span>Join today — no lock-in</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="trust-line">Trusted by champions since 2013</p>
+    </div>
+
+    <div class="panel-divider"></div>
+
+    <div class="right-panel">
+      <div class="corner-bracket top-right">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M40 1H5C2.8 1 1 2.8 1 5V40" stroke="url(#g1)" stroke-width="1.5"/>
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="40" y2="40">
+              <stop stop-color="#a855f7"/>
+              <stop offset="1" stop-color="#e879f9"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="corner-bracket bottom-left">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M40 1H5C2.8 1 1 2.8 1 5V40" stroke="url(#g2)" stroke-width="1.5"/>
+          <defs>
+            <linearGradient id="g2" x1="0" y1="0" x2="40" y2="40">
+              <stop stop-color="#a855f7"/>
+              <stop offset="1" stop-color="#e879f9"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <div class="form-wrapper">
+        <div class="mobile-logo">Iron<span>Peak</span></div>
+
+        <div class="tab-switcher" id="tab-switcher">
+          <button class="tab-btn active" data-tab="login">Sign In</button>
+          <button class="tab-btn" data-tab="register">Create Account</button>
+        </div>
+
+        <div class="form-panel active" id="panel-login">
+          <h2 class="form-title">Welcome <span class="hl">Back</span></h2>
+          <p class="form-subtitle">Pick up where you left off.</p>
+
+          <div class="field-group">
+            <label class="field-label" for="login-email">Email Address</label>
+            <div class="field-input-wrap">
+              <input class="field-input" type="email" id="login-email" placeholder="you@example.com" autocomplete="email" />
+            </div>
+            <div class="field-error" id="login-email-err"></div>
+          </div>
+
+          <div class="field-group">
+            <label class="field-label" for="login-password">Password</label>
+            <div class="field-input-wrap">
+              <input class="field-input has-icon" type="password" id="login-password" placeholder="••••••••" autocomplete="current-password" />
+              <button class="field-icon-btn" type="button" data-toggle="login-password" aria-label="Toggle password visibility">
+                <i class="fa-regular fa-eye"></i>
+              </button>
+            </div>
+            <div class="field-error" id="login-password-err"></div>
+          </div>
+
+          <div class="options-row">
+            <label class="remember-label">
+              <div class="custom-checkbox" id="remember-cb" role="checkbox" aria-checked="false" tabindex="0">
+                <i class="fa-solid fa-check checkmark"></i>
+              </div>
+              Remember me
+            </label>
+            <a href="#" class="forgot-link" id="forgot-trigger">Forgot Password?</a>
+          </div>
+
+          <button class="btn-primary" id="login-submit" disabled>
+            <span>Sign In</span>
+            <i class="fa-solid fa-arrow-right btn-icon"></i>
+            <div class="btn-spinner"></div>
+          </button>
+
+          <div class="auth-divider">
+            <span class="auth-divider-text">or continue with</span>
+          </div>
+          <div class="social-row">
+            <button class="btn-social"><i class="fa-brands fa-google"></i> Continue with Google</button>
+            <button class="btn-social"><i class="fa-brands fa-apple"></i> Continue with Apple</button>
+          </div>
+
+          <p class="switch-hint">
+            Don't have an account?
+            <button class="switch-link" data-switch="register">Create one</button>
+          </p>
+        </div>
+
+        <div class="form-panel" id="panel-register">
+          <div class="success-screen" id="success-screen">
+            <div class="success-check-wrap">
+              <svg class="success-svg" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="40" cy="40" r="36" stroke="url(#sg)" stroke-width="2"/>
+                <path class="check-path" d="M24 40l12 12 20-24" stroke="#e879f9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                  <linearGradient id="sg" x1="0" y1="0" x2="80" y2="80">
+                    <stop stop-color="#a855f7"/><stop offset="1" stop-color="#e879f9"/>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <div class="success-title">YOU'RE IN.</div>
+            <p class="success-subtitle">Welcome to Iron Peak. Your journey begins now.</p>
+            <div class="success-plan-card">
+              <div class="plan-card-label">Your membership plan</div>
+              <div class="plan-card-name" id="success-plan-name">Legend <span>$179/mo</span></div>
+            </div>
+            <button class="btn-primary" onclick="window.location.href='index.html'">
+              <span>Go to My Dashboard</span>
+              <i class="fa-solid fa-arrow-right btn-icon"></i>
+            </button>
+          </div>
+
+          <div id="register-form-content">
+            <h2 class="form-title">Join the <span class="hl">Legend</span></h2>
+            <p class="form-subtitle">Your transformation starts today.</p>
+
+            <div class="field-group">
+              <label class="field-label" for="reg-name">Full Name</label>
+              <div class="field-input-wrap">
+                <input class="field-input" type="text" id="reg-name" placeholder="John Smith" autocomplete="name" />
+              </div>
+              <div class="field-error" id="reg-name-err"></div>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label" for="reg-email">Email Address</label>
+              <div class="field-input-wrap">
+                <input class="field-input" type="email" id="reg-email" placeholder="you@example.com" autocomplete="email" />
+              </div>
+              <div class="field-error" id="reg-email-err"></div>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label" for="reg-phone">Phone Number <span class="optional">(optional)</span></label>
+              <div class="field-input-wrap">
+                <input class="field-input" type="tel" id="reg-phone" placeholder="+1 (555) 000-0000" autocomplete="tel" />
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label" for="reg-password">Password</label>
+              <div class="field-input-wrap">
+                <input class="field-input has-icon" type="password" id="reg-password" placeholder="Min. 8 characters" autocomplete="new-password" />
+                <button class="field-icon-btn" type="button" data-toggle="reg-password" aria-label="Toggle password visibility">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+              <div class="strength-bar" id="strength-bar">
+                <div class="strength-seg" id="seg1"></div>
+                <div class="strength-seg" id="seg2"></div>
+                <div class="strength-seg" id="seg3"></div>
+                <div class="strength-seg" id="seg4"></div>
+              </div>
+              <div class="strength-label" id="strength-label"></div>
+              <div class="field-error" id="reg-password-err"></div>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label" for="reg-confirm">Confirm Password</label>
+              <div class="field-input-wrap">
+                <input class="field-input has-icon" type="password" id="reg-confirm" placeholder="Re-enter password" autocomplete="new-password" />
+                <button class="field-icon-btn" type="button" data-toggle="reg-confirm" aria-label="Toggle password visibility">
+                  <i class="fa-regular fa-eye"></i>
+                </button>
+              </div>
+              <div class="field-error" id="reg-confirm-err"></div>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label" for="reg-plan">Membership Plan</label>
+              <select class="field-select" id="reg-plan">
+                <option value="">Select a plan…</option>
+                <option value="Essential ($49/mo)">Essential — $49/mo</option>
+                <option value="Elite ($99/mo)">Elite — $99/mo</option>
+                <option value="Legend ($179/mo)">Legend — $179/mo</option>
+              </select>
+              <div class="field-error" id="reg-plan-err"></div>
+            </div>
+
+            <label class="terms-label">
+              <div class="custom-checkbox" id="terms-cb" role="checkbox" aria-checked="false" tabindex="0">
+                <i class="fa-solid fa-check checkmark"></i>
+              </div>
+              I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+            </label>
+            <div class="field-error" id="terms-err"></div>
+
+            <button class="btn-primary" id="register-submit" disabled>
+              <span>Create My Account</span>
+              <i class="fa-solid fa-bolt btn-icon"></i>
+              <div class="btn-spinner"></div>
+            </button>
+
+            <div class="auth-divider">
+              <span class="auth-divider-text">or continue with</span>
+            </div>
+            <div class="social-row">
+              <button class="btn-social"><i class="fa-brands fa-google"></i> Continue with Google</button>
+              <button class="btn-social"><i class="fa-brands fa-apple"></i> Continue with Apple</button>
+            </div>
+
+            <p class="switch-hint">
+              Already a member?
+              <button class="switch-link" data-switch="login">Sign in</button>
+            </p>
+          </div>
+        </div>
+
+        <div class="form-panel" id="panel-forgot">
+          <button class="back-link" id="forgot-back">
+            <i class="fa-solid fa-arrow-left"></i> Back to Sign In
+          </button>
+
+          <div id="forgot-form-content">
+            <h2 class="form-title">Reset <span class="hl">Password</span></h2>
+            <p class="form-subtitle">Enter your email to receive a reset link.</p>
+
+            <div class="field-group">
+              <label class="field-label" for="forgot-email">Email Address</label>
+              <div class="field-input-wrap">
+                <input class="field-input" type="email" id="forgot-email" placeholder="you@example.com" />
+              </div>
+              <div class="field-error" id="forgot-email-err"></div>
+            </div>
+
+            <button class="btn-primary" id="forgot-submit">
+              <span>Send Reset Link</span>
+              <i class="fa-solid fa-envelope btn-icon"></i>
+              <div class="btn-spinner"></div>
+            </button>
+          </div>
+
+          <div id="forgot-success">
+            <div class="forgot-success-icon"><i class="fa-regular fa-envelope-open"></i></div>
+            <h2 class="form-title" style="font-size:2rem">Check Your <span class="hl">Email</span></h2>
+            <p class="form-subtitle">We sent a reset link to your inbox. It expires in 15 minutes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

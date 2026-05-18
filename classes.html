@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Iron Peak Fitness classes across HIIT, strength, yoga, and CrossFit with elite coaches, weekly schedules, and full program details.">
+  <meta property="og:title" content="Iron Peak Fitness | Classes">
+  <meta property="og:description" content="Explore Iron Peak Fitness classes across HIIT, strength, yoga, and CrossFit with elite coaches, weekly schedules, and full program details.">
+  <meta property="og:image" content="images/og-image.jpg">
+  <link rel="canonical" href="https://yoursite.com/classes.html">
+  <title>Iron Peak Fitness | Classes</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/pages/classes.css">
+</head>
+<body>
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <div id="progress-bar"></div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo">Iron<span>Peak</span></a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="classes.html" class="active">Classes</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="auth.html" class="nav-cta">Join Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">
+      <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+    </button>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="classes.html" class="active">Classes</a>
+    <a href="trainers.html">Trainers</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html">Contact</a>
+    <a href="auth.html">Join Now</a>
+  </nav>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-lines"></div>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="hero-ghost">CLASSES</div>
+      <div class="hero-inner">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="sep">&gt;</span>
+          <span class="current">Classes</span>
+        </nav>
+        <h1 class="hero-title">
+          <span class="line1">OUR</span>
+          <span class="line2">CLASSES</span>
+        </h1>
+        <p class="hero-subtitle">Every discipline. Every level. One obsession - your peak.</p>
+      </div>
+      <div class="scroll-hint">
+        <span>Scroll</span>
+        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+      </div>
+    </section>
+
+    <section class="filter-section">
+      <div class="section-label reveal">Explore</div>
+      <div class="filter-tabs reveal delay-1" id="filter-tabs">
+        <button class="tab-btn active" data-filter="all">All</button>
+        <button class="tab-btn" data-filter="cardio">Cardio</button>
+        <button class="tab-btn" data-filter="strength">Strength</button>
+        <button class="tab-btn" data-filter="yoga">Yoga</button>
+        <button class="tab-btn" data-filter="hiit">HIIT</button>
+        <button class="tab-btn" data-filter="crossfit">CrossFit</button>
+      </div>
+    </section>
+
+    <section class="cards-section">
+      <div class="cards-grid-wrapper" id="cards-grid">
+        <article class="class-card card-1 reveal" data-category="hiit">
+          <div class="card-bg"></div>
+          <div class="card-overlay"></div>
+          <div class="card-hover-glow"></div>
+          <i class="fa-solid fa-fire card-ghost-icon" aria-hidden="true"></i>
+          <div class="card-content">
+            <span class="card-tag">HIIT</span>
+            <h3 class="card-name">INFERNO</h3>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock" aria-hidden="true"></i> 45 MIN</span>
+              <span><i class="fa-solid fa-bolt" aria-hidden="true"></i> 650 KCAL</span>
+              <span><i class="fa-solid fa-signal" aria-hidden="true"></i> ADVANCED</span>
+            </div>
+            <p class="card-desc">High-intensity intervals that push your cardiovascular limits. Burn maximum calories in minimum time with explosive functional movements.</p>
+            <a href="#" class="card-book">Book Class <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="class-card card-2 reveal delay-1" data-category="strength">
+          <div class="card-bg"></div>
+          <div class="card-overlay"></div>
+          <div class="card-hover-glow"></div>
+          <i class="fa-solid fa-dumbbell card-ghost-icon" aria-hidden="true"></i>
+          <div class="card-content">
+            <span class="card-tag">Strength</span>
+            <h3 class="card-name">IRON FORGE</h3>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock" aria-hidden="true"></i> 60 MIN</span>
+              <span><i class="fa-solid fa-bolt" aria-hidden="true"></i> 480 KCAL</span>
+              <span><i class="fa-solid fa-signal" aria-hidden="true"></i> ALL LEVELS</span>
+            </div>
+            <p class="card-desc">Progressive overload training designed to build raw strength. Compound lifts, structured programming, and real results you can feel.</p>
+            <a href="#" class="card-book">Book Class <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="class-card card-3 reveal delay-2" data-category="yoga">
+          <div class="card-bg"></div>
+          <div class="card-overlay"></div>
+          <div class="card-hover-glow"></div>
+          <i class="fa-solid fa-spa card-ghost-icon" aria-hidden="true"></i>
+          <div class="card-content">
+            <span class="card-tag">Yoga</span>
+            <h3 class="card-name">FLOW STATE</h3>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock" aria-hidden="true"></i> 60 MIN</span>
+              <span><i class="fa-solid fa-bolt" aria-hidden="true"></i> 280 KCAL</span>
+              <span><i class="fa-solid fa-signal" aria-hidden="true"></i> BEGINNER</span>
+            </div>
+            <p class="card-desc">Dynamic Vinyasa sequences designed to build flexibility, restore balance, and clear your mind. Breathwork meets movement mastery.</p>
+            <a href="#" class="card-book">Book Class <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="class-card card-4 reveal delay-1" data-category="cardio">
+          <div class="card-bg"></div>
+          <div class="card-overlay"></div>
+          <div class="card-hover-glow"></div>
+          <i class="fa-solid fa-person-running card-ghost-icon" aria-hidden="true"></i>
+          <div class="card-content">
+            <span class="card-tag">Cardio</span>
+            <h3 class="card-name">VELOCITY</h3>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock" aria-hidden="true"></i> 50 MIN</span>
+              <span><i class="fa-solid fa-bolt" aria-hidden="true"></i> 580 KCAL</span>
+              <span><i class="fa-solid fa-signal" aria-hidden="true"></i> INTERMEDIATE</span>
+            </div>
+            <p class="card-desc">Sprint intervals, plyometrics, and agility drills. Sculpt your cardiovascular system while torching calories at max heart rate zones.</p>
+            <a href="#" class="card-book">Book Class <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="class-card card-5 reveal delay-2" data-category="crossfit">
+          <div class="card-bg"></div>
+          <div class="card-overlay"></div>
+          <div class="card-hover-glow"></div>
+          <i class="fa-solid fa-shield-halved card-ghost-icon" aria-hidden="true"></i>
+          <div class="card-content">
+            <span class="card-tag">CrossFit</span>
+            <h3 class="card-name">APEX WOD</h3>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock" aria-hidden="true"></i> 55 MIN</span>
+              <span><i class="fa-solid fa-bolt" aria-hidden="true"></i> 700 KCAL</span>
+              <span><i class="fa-solid fa-signal" aria-hidden="true"></i> ADVANCED</span>
+            </div>
+            <p class="card-desc">Workout of the Day meets peak performance. Olympic lifts, gymnastics, and metabolic conditioning fused into one brutal session.</p>
+            <a href="#" class="card-book">Book Class <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+
+        <article class="class-card card-6 reveal delay-3" data-category="strength">
+          <div class="card-bg"></div>
+          <div class="card-overlay"></div>
+          <div class="card-hover-glow"></div>
+          <i class="fa-solid fa-mountain card-ghost-icon" aria-hidden="true"></i>
+          <div class="card-content">
+            <span class="card-tag">Strength</span>
+            <h3 class="card-name">PEAK POWER</h3>
+            <div class="card-meta">
+              <span><i class="fa-regular fa-clock" aria-hidden="true"></i> 75 MIN</span>
+              <span><i class="fa-solid fa-bolt" aria-hidden="true"></i> 520 KCAL</span>
+              <span><i class="fa-solid fa-signal" aria-hidden="true"></i> INTERMEDIATE</span>
+            </div>
+            <p class="card-desc">Powerlifting principles meet athletic conditioning. Build the foundational strength that translates to every other discipline on the floor.</p>
+            <a href="#" class="card-book">Book Class <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="schedule-section" id="schedule">
+      <div class="schedule-header reveal">
+        <div class="section-label">Plan Your Week</div>
+        <h2 class="section-title">Weekly <span class="highlight">Schedule</span></h2>
+      </div>
+      <div class="scroll-indicator reveal delay-1">
+        <i class="fa-solid fa-arrows-left-right" aria-hidden="true"></i>
+        <span>Scroll to see full schedule</span>
+      </div>
+      <div class="schedule-scroll-wrap reveal delay-1">
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>TIME</th>
+              <th>MON</th>
+              <th>TUE</th>
+              <th>WED</th>
+              <th>THU</th>
+              <th>FRI</th>
+              <th>SAT</th>
+              <th>SUN</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>6 AM</td>
+              <td><div class="schedule-cell"><div class="cell-name">INFERNO</div><div class="cell-trainer">Coach Rivera</div><span class="cell-tag tag-hiit">HIIT</span></div></td>
+              <td><div class="schedule-cell"><div class="cell-name">IRON FORGE</div><div class="cell-trainer">Coach Blake</div><span class="cell-tag tag-strength">Strength</span></div></td>
+              <td><div class="schedule-cell"><div class="cell-name">VELOCITY</div><div class="cell-trainer">Coach Chen</div><span class="cell-tag tag-cardio">Cardio</span></div></td>
+              <td><div class="schedule-cell"><div class="cell-name">INFERNO</div><div class="cell-trainer">Coach Rivera</div><span class="cell-tag tag-hiit">HIIT</span></div></td>
+              <td><div class="schedule-cell"><div class="cell-name">IRON FORGE</div><div class="cell-trainer">Coach Blake</div><span class="cell-tag tag-strength">Strength</span></div></td>
+              <td><div class="schedule-cell"><div class="cell-name">APEX WOD</div><div class="cell-trainer">Coach Torres</div><span class="cell-tag tag-crossfit">CrossFit</span></div></td>
+              <td><div class="schedule-cell empty"></div></td>
+            </tr>
+            <tr>
+              <td>8 AM</td>
+              <td><div class="schedule-cell"><div class="cell-name">FLOW STATE</div><div class="cell-trainer">Coach Maya</div><span class="cell-tag tag-yoga">Yoga</span></div></td>
+              <td><div class="schedule-cell empty"></div></td>
+              <td><div class="schedule-cell"><div class="cell-name">FLOW STATE</div><div class="cell-trainer">Coach Maya</div><span class="cell-tag tag-yoga">Yoga</span></div></td>
+              <td><div class="schedule-cell empty"></div></td>
+              <td><div class="schedule-cell"><div class="cell-name">FLOW STATE</div><div class="cell-trainer">Coach Maya</div><span class="cell-tag tag-yoga">Yoga</span></div></td>
+              <td><div class="schedule-cell"><div class="cell-name">VELOCITY</div><div class="cell-trainer">Coach Chen</div><span class="cell-tag tag-cardio">Cardio</span></div></td>
+              <td><div class="schedule-cell"><div class="cell-name">FLOW STATE</div><div class="cell-trainer">Coach Maya</div><span class="cell-tag tag-yoga">Yoga</span></div></td>
+            </tr>
+            <tr>
+              <td>10 AM</td>
+              <td><div class="schedule-cell empty"></div></td>
+              <td><div class="schedule-cell"><div class="cell-name">VELOCITY</div><div class="cell-trainer">Coach Chen</div><span class="cell-tag tag-cardio">Cardio</span></div></td>
+              <td><div class="schedule-cell"><div class="cell-name">PEAK POWER</div><div class="cell-trainer">Coach Blake</div><span class="cell-tag tag-strength">Strength</span></div></td>
+              <td><div class="schedule-cell"><div class="cell-name">APEX WOD</div><div class="cell-trainer">Coach Torres</div><span class="cell-tag tag-crossfit">CrossFit</span></div></td>
+              <td><div class="schedule-cell empty"></div></td>
+              <td><div class="schedule-cell"><div class="cell-name">INFERNO</div><div class="cell-trainer">Coach Rivera</div><span class="cell-tag tag-hiit">HIIT</span></div></td>
+              <td><div class="schedule-cell"><div class="cell-name">PEAK POWER</div><div class="cell-trainer">Coach Blake</div><span class="cell-tag tag-strength">Strength</span></div></td>
+            </tr>
+            <tr>
+              <td>12 PM</td>
+              <td><div class="schedule-cell"><div class="cell-name">APEX WOD</div><div class="cell-trainer">Coach Torres</div><span class="cell-tag tag-crossfit">CrossFit</span></div></td>
+              <td><div class="schedule-cell"><div class="cell-name">INFERNO</div><div class="cell-trainer">Coach Rivera</div><span class="cell-tag tag-hiit">HIIT</span></div></td>
+              <td><div class="schedule-cell empty"></div></td>
+              <td><div class="schedule-cell"><div class="cell-name">IRON FORGE</div><div class="cell-trainer">Coach Blake</div><span class="cell-tag tag-strength">Strength</span></div></td>
+              <td><div class="schedule-cell"><div class="cell-name">VELOCITY</div><div class="cell-trainer">Coach Chen</div><span class="cell-tag tag-cardio">Cardio</span></div></td>
+              <td><div class="schedule-cell empty"></div></td>
+              <td><div class="schedule-cell empty"></div></td>
+            </tr>
+            <tr>
+              <td>4 PM</td>
+              <td><div class="schedule-cell"><div class="cell-name">IRON FORGE</div><div class="cell-trainer">Coach Blake</div><span class="cell-tag tag-strength">Strength</span></div></td>
+              <td><div class="schedule-cell"><div class="cell-name">PEAK POWER</div><div class="cell-trainer">Coach Blake</div><span class="cell-tag tag-strength">Strength</span></div></td>
+              <td><div class="schedule-cell"><div class="cell-name">INFERNO</div><div class="cell-trainer">Coach Rivera</div><span class="cell-tag tag-hiit">HIIT</span></div></td>
+              <td><div class="schedule-cell"><div class="cell-name">FLOW STATE</div><div class="cell-trainer">Coach Maya</div><span class="cell-tag tag-yoga">Yoga</span></div></td>
+              <td><div class="schedule-cell"><div class="cell-name">APEX WOD</div><div class="cell-trainer">Coach Torres</div><span class="cell-tag tag-crossfit">CrossFit</span></div></td>
+              <td><div class="schedule-cell"><div class="cell-name">IRON FORGE</div><div class="cell-trainer">Coach Blake</div><span class="cell-tag tag-strength">Strength</span></div></td>
+              <td><div class="schedule-cell empty"></div></td>
+            </tr>
+            <tr>
+              <td>6 PM</td>
+              <td><div class="schedule-cell"><div class="cell-name">VELOCITY</div><div class="cell-trainer">Coach Chen</div><span class="cell-tag tag-cardio">Cardio</span></div></td>
+              <td><div class="schedule-cell"><div class="cell-name">APEX WOD</div><div class="cell-trainer">Coach Torres</div><span class="cell-tag tag-crossfit">CrossFit</span></div></td>
+              <td><div class="schedule-cell"><div class="cell-name">PEAK POWER</div><div class="cell-trainer">Coach Blake</div><span class="cell-tag tag-strength">Strength</span></div></td>
+              <td><div class="schedule-cell"><div class="cell-name">INFERNO</div><div class="cell-trainer">Coach Rivera</div><span class="cell-tag tag-hiit">HIIT</span></div></td>
+              <td><div class="schedule-cell"><div class="cell-name">FLOW STATE</div><div class="cell-trainer">Coach Maya</div><span class="cell-tag tag-yoga">Yoga</span></div></td>
+              <td><div class="schedule-cell"><div class="cell-name">VELOCITY</div><div class="cell-trainer">Coach Chen</div><span class="cell-tag tag-cardio">Cardio</span></div></td>
+              <td><div class="schedule-cell empty"></div></td>
+            </tr>
+            <tr>
+              <td>8 PM</td>
+              <td><div class="schedule-cell"><div class="cell-name">FLOW STATE</div><div class="cell-trainer">Coach Maya</div><span class="cell-tag tag-yoga">Yoga</span></div></td>
+              <td><div class="schedule-cell empty"></div></td>
+              <td><div class="schedule-cell"><div class="cell-name">VELOCITY</div><div class="cell-trainer">Coach Chen</div><span class="cell-tag tag-cardio">Cardio</span></div></td>
+              <td><div class="schedule-cell empty"></div></td>
+              <td><div class="schedule-cell"><div class="cell-name">INFERNO</div><div class="cell-trainer">Coach Rivera</div><span class="cell-tag tag-hiit">HIIT</span></div></td>
+              <td><div class="schedule-cell empty"></div></td>
+              <td><div class="schedule-cell empty"></div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <div class="quote-inner">
+        <span class="quote-mark reveal">"</span>
+        <p class="quote-text reveal delay-1">"The only bad workout is the one that didn't happen."</p>
+        <p class="quote-author reveal delay-2">- Iron Peak Coaches</p>
+      </div>
+    </section>
+
+    <section class="bmi-section">
+      <div class="bmi-card reveal">
+        <div>
+          <div class="section-label">Free Tool</div>
+          <div class="bmi-icon"><i class="fa-solid fa-calculator" aria-hidden="true"></i></div>
+          <h2 class="bmi-title">Know Your <span class="highlight">Numbers.</span></h2>
+          <p class="bmi-text">
+            Use our free BMI Calculator on the Pricing page to get a personalized baseline.
+            Understand where you stand today - then let our classes take you to your peak.
+          </p>
+        </div>
+        <div class="bmi-cta">
+          <a href="pricing.html" class="btn-primary">
+            Calculate BMI <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" id="cta">
+      <div class="cta-glow"></div>
+      <div class="cta-inner">
+        <div class="section-label reveal" style="justify-content:center">Start Today</div>
+        <h2 class="cta-title reveal delay-1">Find Your <span class="highlight">Class.</span></h2>
+        <p class="cta-subtitle reveal delay-2">First session free. No commitment.</p>
+        <div class="cta-btns reveal delay-3">
+          <a href="#schedule" class="btn-primary">
+            <i class="fa-regular fa-calendar" aria-hidden="true"></i> Browse Schedule
+          </a>
+          <a href="pricing.html" class="btn-ghost">
+            View Memberships <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">Iron<span>Peak</span></a>
+        <p>A premium fitness sanctuary for those who demand more from themselves and their training environment.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+          <a href="#" class="social-link" aria-label="TikTok"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+          <a href="#" class="social-link" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="classes.html">HIIT</a></li>
+          <li><a href="classes.html">Power Lifting</a></li>
+          <li><a href="classes.html">Yoga</a></li>
+          <li><a href="classes.html">CrossFit</a></li>
+          <li><a href="trainers.html">Personal Training</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="trainers.html">Our Trainers</a></li>
+          <li><a href="pricing.html">Membership</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="contact.html">14 Iron District</a></li>
+          <li><a href="contact.html">hello@ironpeak.com</a></li>
+          <li><a href="contact.html">+1 (555) 024 PEAK</a></li>
+          <li><a href="contact.html">Mon-Sun: 5AM - 11PM</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>(c) 2025 Iron Peak Fitness. All rights reserved.</p>
+      <p>Privacy Policy - Terms of Service</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/tabs.js"></script>
+</body>
+</html>

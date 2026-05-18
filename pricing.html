@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Choose an Iron Peak Fitness membership plan with monthly or annual billing, compare features, and use the BMI calculator to find your ideal path.">
+  <meta property="og:title" content="Iron Peak Fitness | Pricing">
+  <meta property="og:description" content="Choose an Iron Peak Fitness membership plan with monthly or annual billing, compare features, and use the BMI calculator to find your ideal path.">
+  <meta property="og:image" content="images/og-image.jpg">
+  <link rel="canonical" href="https://yoursite.com/pricing.html">
+  <title>Iron Peak Fitness | Pricing</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/pages/pricing.css">
+</head>
+<body>
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <div id="progress-bar"></div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo">Iron<span>Peak</span></a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="pricing.html" class="active">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="auth.html" class="nav-cta">Join Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">
+      <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+    </button>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="classes.html">Classes</a>
+    <a href="trainers.html">Trainers</a>
+    <a href="pricing.html" class="active">Pricing</a>
+    <a href="contact.html">Contact</a>
+    <a href="auth.html">Join Now</a>
+  </nav>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="hero-diagonal-lines" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+      <p class="hero-ghost-text" aria-hidden="true">PRICING</p>
+
+      <div class="container">
+        <div class="hero-content">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+            <span>Pricing</span>
+          </nav>
+          <h1 class="hero-title reveal">
+            <span class="line1">CHOOSE YOUR</span>
+            <span class="line2">PLAN</span>
+          </h1>
+          <p class="hero-subtitle reveal delay-2">"No contracts. No excuses. Just results."</p>
+        </div>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+        <span class="scroll-dot"></span>
+        <span>Scroll to explore</span>
+      </div>
+    </section>
+
+    <section class="billing-toggle-section">
+      <div class="billing-toggle-wrap" role="group" aria-label="Billing period selection">
+        <span class="billing-label active" id="label-monthly">Monthly</span>
+        <button
+          class="toggle-switch"
+          id="billingToggle"
+          aria-pressed="false"
+          aria-label="Toggle annual billing for 20% discount"
+        >
+          <div class="toggle-knob"></div>
+        </button>
+        <span class="billing-label" id="label-annual">Annual — Save 20%</span>
+      </div>
+    </section>
+
+    <section class="pricing-section" aria-label="Membership plans">
+      <div class="container">
+        <div class="pricing-grid-wrapper">
+          <article class="pricing-card reveal">
+            <p class="plan-name">Essential</p>
+            <div class="plan-price-wrap">
+              <span class="plan-price-sup">$</span>
+              <span class="plan-price" data-monthly="49" data-annual="39" id="price-essential">49</span>
+            </div>
+            <p class="plan-period">/ month</p>
+            <p class="save-badge" id="save-essential">Save 20%</p>
+            <div class="plan-divider"></div>
+            <ul class="feature-list">
+              <li class="included"><i class="fa-solid fa-check feat-icon" aria-hidden="true"></i> Gym Floor Access</li>
+              <li class="included"><i class="fa-solid fa-check feat-icon" aria-hidden="true"></i> Locker Rooms</li>
+              <li class="included"><i class="fa-solid fa-check feat-icon" aria-hidden="true"></i> 2 Group Classes/Week</li>
+              <li class="excluded"><i class="fa-solid fa-xmark feat-icon" aria-hidden="true"></i> Personal Trainer</li>
+              <li class="excluded"><i class="fa-solid fa-xmark feat-icon" aria-hidden="true"></i> Recovery Suite</li>
+              <li class="excluded"><i class="fa-solid fa-xmark feat-icon" aria-hidden="true"></i> Nutrition Coaching</li>
+              <li class="excluded"><i class="fa-solid fa-xmark feat-icon" aria-hidden="true"></i> Guest Passes</li>
+            </ul>
+            <a href="contact.html" class="btn-ghost plan-cta">Get Started</a>
+          </article>
+
+          <article class="pricing-card featured reveal delay-1">
+            <div class="popular-badge" role="note">Most Popular</div>
+            <p class="plan-name">Elite</p>
+            <div class="plan-price-wrap">
+              <span class="plan-price-sup">$</span>
+              <span class="plan-price" data-monthly="99" data-annual="79" id="price-elite">99</span>
+            </div>
+            <p class="plan-period">/ month</p>
+            <p class="save-badge" id="save-elite">Save 20%</p>
+            <div class="plan-divider"></div>
+            <ul class="feature-list">
+              <li class="included"><i class="fa-solid fa-check feat-icon" aria-hidden="true"></i> Full Gym 24/7</li>
+              <li class="included"><i class="fa-solid fa-check feat-icon" aria-hidden="true"></i> Luxury Locker Rooms</li>
+              <li class="included"><i class="fa-solid fa-check feat-icon" aria-hidden="true"></i> Unlimited Group Classes</li>
+              <li class="included"><i class="fa-solid fa-check feat-icon" aria-hidden="true"></i> 4 PT Sessions/Month</li>
+              <li class="included"><i class="fa-solid fa-check feat-icon" aria-hidden="true"></i> Recovery Suite</li>
+              <li class="excluded"><i class="fa-solid fa-xmark feat-icon" aria-hidden="true"></i> Nutrition Coaching</li>
+              <li class="excluded"><i class="fa-solid fa-xmark feat-icon" aria-hidden="true"></i> Guest Passes</li>
+            </ul>
+            <a href="contact.html" class="btn-primary plan-cta">Join Elite</a>
+          </article>
+
+          <article class="pricing-card reveal delay-2">
+            <p class="plan-name">Legend</p>
+            <div class="plan-price-wrap">
+              <span class="plan-price-sup">$</span>
+              <span class="plan-price" data-monthly="179" data-annual="143" id="price-legend">179</span>
+            </div>
+            <p class="plan-period">/ month</p>
+            <p class="save-badge" id="save-legend">Save 20%</p>
+            <div class="plan-divider"></div>
+            <ul class="feature-list">
+              <li class="included"><i class="fa-solid fa-check feat-icon" aria-hidden="true"></i> Everything in Elite</li>
+              <li class="included"><i class="fa-solid fa-check feat-icon" aria-hidden="true"></i> Unlimited PT Sessions</li>
+              <li class="included"><i class="fa-solid fa-check feat-icon" aria-hidden="true"></i> Full Recovery Suite</li>
+              <li class="included"><i class="fa-solid fa-check feat-icon" aria-hidden="true"></i> Personalized Nutrition</li>
+              <li class="included"><i class="fa-solid fa-check feat-icon" aria-hidden="true"></i> Priority Booking</li>
+              <li class="included"><i class="fa-solid fa-check feat-icon" aria-hidden="true"></i> Guest Passes x4/mo</li>
+              <li class="included" style="visibility:hidden;"><i class="fa-solid fa-check feat-icon" aria-hidden="true"></i> —</li>
+            </ul>
+            <a href="contact.html" class="btn-ghost plan-cta">Go Legend</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="comparison-section" aria-label="Plan comparison">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <p class="section-label">All Plans</p>
+          <h2 class="section-title">Full <span class="gradient-text">Comparison</span></h2>
+        </div>
+        <div class="table-wrap reveal-up delay-2">
+          <table class="comparison-table" role="table" aria-label="Feature comparison between Essential, Elite, and Legend plans">
+            <thead>
+              <tr>
+                <th scope="col">Feature</th>
+                <th scope="col">Essential</th>
+                <th scope="col">Elite</th>
+                <th scope="col">Legend</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Gym Access</td>
+                <td><i class="fa-solid fa-check check" aria-label="Included"></i></td>
+                <td><span class="val">24/7</span></td>
+                <td><span class="val">24/7 Priority</span></td>
+              </tr>
+              <tr>
+                <td>Group Classes</td>
+                <td><span class="val">2/Week</span></td>
+                <td><span class="val">Unlimited</span></td>
+                <td><span class="val">Unlimited</span></td>
+              </tr>
+              <tr>
+                <td>Personal Training</td>
+                <td><i class="fa-solid fa-xmark cross" aria-label="Not included"></i></td>
+                <td><span class="val">4 Sessions/mo</span></td>
+                <td><span class="val">Unlimited</span></td>
+              </tr>
+              <tr>
+                <td>Recovery Suite</td>
+                <td><i class="fa-solid fa-xmark cross" aria-label="Not included"></i></td>
+                <td><i class="fa-solid fa-check check" aria-label="Included"></i></td>
+                <td><span class="val">Full Access</span></td>
+              </tr>
+              <tr>
+                <td>Nutrition Plan</td>
+                <td><i class="fa-solid fa-xmark cross" aria-label="Not included"></i></td>
+                <td><i class="fa-solid fa-xmark cross" aria-label="Not included"></i></td>
+                <td><i class="fa-solid fa-check check" aria-label="Included"></i></td>
+              </tr>
+              <tr>
+                <td>Guest Passes</td>
+                <td><i class="fa-solid fa-xmark cross" aria-label="Not included"></i></td>
+                <td><i class="fa-solid fa-xmark cross" aria-label="Not included"></i></td>
+                <td><span class="val">4/Month</span></td>
+              </tr>
+              <tr>
+                <td>Priority Booking</td>
+                <td><i class="fa-solid fa-xmark cross" aria-label="Not included"></i></td>
+                <td><i class="fa-solid fa-xmark cross" aria-label="Not included"></i></td>
+                <td><i class="fa-solid fa-check check" aria-label="Included"></i></td>
+              </tr>
+              <tr>
+                <td>App Access</td>
+                <td><i class="fa-solid fa-check check" aria-label="Included"></i></td>
+                <td><i class="fa-solid fa-check check" aria-label="Included"></i></td>
+                <td><i class="fa-solid fa-check check" aria-label="Included"></i></td>
+              </tr>
+              <tr>
+                <td>Contract</td>
+                <td><span class="val">None</span></td>
+                <td><span class="val">None</span></td>
+                <td><span class="val">None</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="bmi-section" aria-label="BMI Calculator">
+      <div class="container">
+        <div class="bmi-grid">
+          <div class="reveal-left">
+            <p class="section-label">Health Tools</p>
+            <h2 class="section-title">Know Your <span class="gradient-text">Numbers</span></h2>
+            <p class="bmi-intro">
+              Understanding your Body Mass Index is the first step toward a personalized fitness plan. Use our calculator to get an instant snapshot of your health baseline.
+            </p>
+            <ul class="bmi-benefits" aria-label="Benefits of knowing your BMI">
+              <li>
+                <i class="fa-solid fa-diamond fa-xs bmi-benefit-icon" aria-hidden="true"></i>
+                Track progress over time with consistent measurements
+              </li>
+              <li>
+                <i class="fa-solid fa-diamond fa-xs bmi-benefit-icon" aria-hidden="true"></i>
+                Get matched with the right training plan for your body
+              </li>
+              <li>
+                <i class="fa-solid fa-diamond fa-xs bmi-benefit-icon" aria-hidden="true"></i>
+                Consult our trainers with a clear health baseline in hand
+              </li>
+            </ul>
+          </div>
+
+          <div class="reveal-right">
+            <div class="bmi-card">
+              <form class="bmi-form" id="bmi-form" novalidate aria-label="BMI Calculator form">
+                <div class="input-group">
+                  <label for="bmi-height">Height (cm)</label>
+                  <input
+                    type="number" id="bmi-height"
+                    placeholder="e.g. 175"
+                    min="1" max="300"
+                    aria-describedby="height-error"
+                    autocomplete="off"
+                  >
+                  <p class="bmi-error" id="height-error" role="alert"></p>
+                </div>
+                <div class="input-group">
+                  <label for="bmi-weight">Weight (kg)</label>
+                  <input
+                    type="number" id="bmi-weight"
+                    placeholder="e.g. 70"
+                    min="1" max="500"
+                    aria-describedby="weight-error"
+                    autocomplete="off"
+                  >
+                  <p class="bmi-error" id="weight-error" role="alert"></p>
+                </div>
+                <button type="submit" class="btn-primary" style="width:100%; text-align:center;">
+                  Calculate BMI
+                </button>
+              </form>
+
+              <div class="bmi-result" id="bmi-result" aria-live="polite">
+                <p class="bmi-number" id="bmi-number-display">—</p>
+                <p class="bmi-category" id="bmi-category-display">—</p>
+                <div class="bmi-bar-wrap" role="progressbar" aria-label="BMI scale" aria-valuemin="0" aria-valuemax="40">
+                  <div class="bmi-bar-fill" id="bmi-bar"></div>
+                </div>
+                <p class="bmi-scale">Scale: 0 – 40+ BMI</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section" aria-label="Frequently Asked Questions">
+      <div class="container">
+        <div class="reveal-up" style="text-align:center;">
+          <p class="section-label" style="justify-content:center;">Got Questions</p>
+          <h2 class="section-title">Common <span class="gradient-text">Questions</span></h2>
+        </div>
+
+        <div class="faq-list" id="faqList">
+          <div class="accordion-item">
+            <button class="accordion-btn" aria-expanded="false">
+              <span class="accordion-question">Is there a joining fee?</span>
+              <i class="fa-solid fa-chevron-down accordion-chevron" aria-hidden="true"></i>
+            </button>
+            <div class="accordion-answer">
+              <div class="accordion-answer-inner">
+                No — Iron Peak Fitness has zero joining fees on all plans. The price you see is the price you pay, every month. We believe in complete transparency, so what you see on this page is everything you'll ever be charged.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-btn" aria-expanded="false">
+              <span class="accordion-question">Can I freeze my membership?</span>
+              <i class="fa-solid fa-chevron-down accordion-chevron" aria-hidden="true"></i>
+            </button>
+            <div class="accordion-answer">
+              <div class="accordion-answer-inner">
+                Yes. You can freeze your membership for up to 3 months per calendar year. Simply contact our front desk or email us at least 7 days before your next billing cycle. Freezes are free of charge on Elite and Legend plans; a small admin fee applies to Essential.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-btn" aria-expanded="false">
+              <span class="accordion-question">What's included in the recovery suite?</span>
+              <i class="fa-solid fa-chevron-down accordion-chevron" aria-hidden="true"></i>
+            </button>
+            <div class="accordion-answer">
+              <div class="accordion-answer-inner">
+                Our recovery suite includes an infrared sauna, cold plunge pool, compression therapy stations, foam rolling lounge, and stretching zones. Elite members get standard access; Legend members receive priority booking and unlimited sessions with no wait times.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-btn" aria-expanded="false">
+              <span class="accordion-question">Do you offer student or corporate discounts?</span>
+              <i class="fa-solid fa-chevron-down accordion-chevron" aria-hidden="true"></i>
+            </button>
+            <div class="accordion-answer">
+              <div class="accordion-answer-inner">
+                Absolutely. We offer a 15% discount for verified students and a 20% group discount for corporate teams of 5 or more. Bring your student ID or speak to our membership team to set up a corporate account. Discounts can be combined with annual billing for maximum savings.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-btn" aria-expanded="false">
+              <span class="accordion-question">How do I book a personal training session?</span>
+              <i class="fa-solid fa-chevron-down accordion-chevron" aria-hidden="true"></i>
+            </button>
+            <div class="accordion-answer">
+              <div class="accordion-answer-inner">
+                Personal training sessions can be booked through our member app, at the front desk, or by calling reception. Elite members can book up to 7 days in advance; Legend members have 14-day advance booking and priority scheduling. Same-day slots are subject to trainer availability.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-btn" aria-expanded="false">
+              <span class="accordion-question">Can I switch plans at any time?</span>
+              <i class="fa-solid fa-chevron-down accordion-chevron" aria-hidden="true"></i>
+            </button>
+            <div class="accordion-answer">
+              <div class="accordion-answer-inner">
+                Yes. You can upgrade at any time — your new plan activates immediately and billing is prorated. Downgrades take effect at the start of your next billing cycle. There are no penalties for switching, ever.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-btn" aria-expanded="false">
+              <span class="accordion-question">Is there a free trial available?</span>
+              <i class="fa-solid fa-chevron-down accordion-chevron" aria-hidden="true"></i>
+            </button>
+            <div class="accordion-answer">
+              <div class="accordion-answer-inner">
+                New members receive a complimentary 7-day trial with full access to all facilities. No credit card required upfront. At the end of your trial you can choose any plan, and your first 30 days are fully refundable if you're not completely satisfied.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-btn" aria-expanded="false">
+              <span class="accordion-question">What are your opening hours?</span>
+              <i class="fa-solid fa-chevron-down accordion-chevron" aria-hidden="true"></i>
+            </button>
+            <div class="accordion-answer">
+              <div class="accordion-answer-inner">
+                Essential members: Mon–Fri 6am–10pm, Sat–Sun 8am–8pm. Elite and Legend members enjoy 24/7 keycard access to the main gym floor. Staffed hours are Mon–Fri 6am–9pm, weekends 8am–6pm. Group classes and personal training sessions operate within staffed hours.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials-section" aria-label="Member testimonials">
+      <div class="container">
+        <div class="reveal-up" style="text-align:center;">
+          <p class="section-label" style="justify-content:center;">Real Members</p>
+          <h2 class="section-title">They <span class="gradient-text">Trust Us</span></h2>
+        </div>
+        <div class="testimonials-grid">
+          <article class="testimonial-card reveal delay-1">
+            <div class="testimonial-stars" aria-label="5 stars">
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+            </div>
+            <blockquote class="testimonial-quote">
+              "The Elite plan completely transformed my approach to training. Four PT sessions a month and unlimited classes — I've never been this consistent."
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">M</div>
+              <div>
+                <p class="author-name">Marcus T.</p>
+                <p class="author-role">Elite Member — 18 Months</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal delay-2">
+            <div class="testimonial-stars" aria-label="5 stars">
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+            </div>
+            <blockquote class="testimonial-quote">
+              "Started on Essential, upgraded to Legend within 3 months. The recovery suite alone is worth every penny. My body actually has time to recover now."
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">S</div>
+              <div>
+                <p class="author-name">Sofia R.</p>
+                <p class="author-role">Legend Member — 2 Years</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal delay-3">
+            <div class="testimonial-stars" aria-label="5 stars">
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+              <i class="fa-solid fa-star" aria-hidden="true"></i>
+            </div>
+            <blockquote class="testimonial-quote">
+              "No hidden fees, no contracts, no nonsense. The Essential plan was perfect to try things out. The staff are genuinely invested in your progress."
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">J</div>
+              <div>
+                <p class="author-name">Jordan K.</p>
+                <p class="author-role">Essential Member — 6 Months</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" aria-label="Call to action">
+      <div class="cta-glow" aria-hidden="true"></div>
+      <div class="cta-grid-lines" aria-hidden="true"></div>
+      <div class="container" style="position:relative; z-index:1;">
+        <div class="reveal-up">
+          <h2 class="section-title">
+            Start Today.<br>
+            <span class="gradient-text">No Excuses.</span>
+          </h2>
+          <p class="cta-subtitle">"First 30 days free. Cancel anytime."</p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn-primary">Claim Free Trial</a>
+            <a href="trainers.html" class="btn-ghost">Talk to a Trainer</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo" style="font-size:1.8rem;">Iron<span>Peak</span></a>
+          <p>Where strength meets discipline. A premium fitness experience designed for those who demand more from themselves — and their gym.</p>
+          <div class="footer-socials" aria-label="Social media links">
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="#" class="social-icon" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+            <a href="#" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Programs</h4>
+          <ul>
+            <li><a href="classes.html">Group Classes</a></li>
+            <li><a href="trainers.html">Personal Training</a></li>
+            <li><a href="classes.html">HIIT & CrossFit</a></li>
+            <li><a href="classes.html">Yoga & Recovery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="trainers.html">Our Trainers</a></li>
+            <li><a href="pricing.html">Membership</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <span>48 Peak Avenue, Fitness District, NY 10001</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            <span>+1 (212) 555-0190</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <span>hello@ironpeakfitness.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-clock" aria-hidden="true"></i>
+            <span>24/7 Elite & Legend Access</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 <span>Iron Peak Fitness</span>. All rights reserved.</p>
+        <p>Full Stack Development — Project 1 | HTML5 + CSS3 + JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/billing.js"></script>
+  <script src="js/bmi.js"></script>
+  <script src="js/accordion.js"></script>
+</body>
+</html>

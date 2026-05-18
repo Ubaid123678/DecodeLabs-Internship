@@ -1,0 +1,144 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 28px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.navbar.scrolled {
+  padding: 16px 60px;
+  background: rgba(5, 5, 8, 0.88);
+  backdrop-filter: blur(24px);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.nav-logo {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  letter-spacing: 4px;
+  background: linear-gradient(135deg, var(--white), var(--purple-glow));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.nav-logo span {
+  -webkit-text-fill-color: var(--accent);
+}
+
+.nav-links {
+  display: flex;
+  gap: 44px;
+  align-items: center;
+}
+
+.nav-links a {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--purple-light);
+  transition: width 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--white);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+.nav-cta {
+  background: linear-gradient(135deg, var(--violet), var(--purple-mid)) !important;
+  color: var(--white) !important;
+  padding: 10px 26px;
+  border-radius: 2px;
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.3);
+}
+
+.nav-cta::after {
+  display: none !important;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  padding: 5px;
+}
+
+.hamburger span {
+  width: 24px;
+  height: 1.5px;
+  background: var(--white);
+  transition: var(--transition);
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 5, 8, 0.97);
+  backdrop-filter: blur(20px);
+  z-index: 999;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+}
+
+.mobile-nav.open {
+  display: flex;
+}
+
+.mobile-nav a {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: var(--muted);
+  transition: color 0.3s;
+}
+
+.mobile-nav a:hover {
+  color: var(--white);
+}
+
+.mobile-nav-close {
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 1.4rem;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.mobile-nav-close:hover {
+  color: var(--white);
+}

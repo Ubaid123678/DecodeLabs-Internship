@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Iron Peak Fitness to book a tour, ask about memberships, or schedule a training consultation.">
+  <meta property="og:title" content="Iron Peak Fitness | Contact">
+  <meta property="og:description" content="Contact Iron Peak Fitness to book a tour, ask about memberships, or schedule a training consultation.">
+  <meta property="og:image" content="images/og-image.jpg">
+  <link rel="canonical" href="https://yoursite.com/contact.html">
+  <title>Iron Peak Fitness | Contact</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&family=Space+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/pages/contact.css">
+</head>
+<body>
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <div id="progress-bar"></div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo">Iron<span>Peak</span></a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="trainers.html">Trainers</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="auth.html" class="nav-cta">Join Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">
+      <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+    </button>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="classes.html">Classes</a>
+    <a href="trainers.html">Trainers</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="auth.html">Join Now</a>
+  </nav>
+
+  <main id="main">
+    <section id="hero">
+      <div class="hero-diag-lines"></div>
+      <div class="hero-diag-extra"></div>
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-ghost-text">CONTACT</div>
+
+      <div class="hero-content">
+        <nav class="hero-breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="fa fa-chevron-right"></i>
+          <span>Contact</span>
+        </nav>
+
+        <h1 class="hero-title reveal">
+          <span class="line1">GET IN</span>
+          <span class="line2">TOUCH</span>
+        </h1>
+
+        <p class="hero-subtitle reveal delay-2">
+          <em>"We'd love to hear from you. A real human will reply within 24 hours."</em>
+        </p>
+      </div>
+
+      <div class="scroll-hint">
+        <div class="scroll-hint-line"></div>
+        Scroll
+      </div>
+    </section>
+
+    <section id="info-cards">
+      <div class="info-cards-grid">
+        <div class="info-card reveal delay-1">
+          <div class="info-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="info-card-label">Location</div>
+          <div class="info-card-value">14 Iron District,<br>City Center</div>
+        </div>
+        <div class="info-card reveal delay-2">
+          <div class="info-card-icon"><i class="fa-solid fa-phone"></i></div>
+          <div class="info-card-label">Phone</div>
+          <div class="info-card-value">+1 (555) 024 PEAK</div>
+        </div>
+        <div class="info-card reveal delay-3">
+          <div class="info-card-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div class="info-card-label">Email</div>
+          <div class="info-card-value">hello@ironpeak.com</div>
+        </div>
+        <div class="info-card reveal delay-4">
+          <div class="info-card-icon"><i class="fa-solid fa-clock"></i></div>
+          <div class="info-card-label">Hours</div>
+          <div class="info-card-value">Mon–Sun:<br>5AM – 11PM</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-main">
+      <div class="contact-grid">
+        <div class="form-card reveal-left">
+          <div id="form-inner">
+            <h2 class="form-title">Send a <span>Message</span></h2>
+
+            <form id="contact-form" novalidate>
+              <div class="form-fields">
+                <div class="form-row">
+                  <div class="field-group">
+                    <label class="field-label" for="f-name">Full Name <span>*</span></label>
+                    <input class="field-input" type="text" id="f-name" name="name" placeholder="John Iron" autocomplete="name">
+                    <span class="field-error" id="err-name" role="alert">Please enter your full name.</span>
+                  </div>
+                  <div class="field-group">
+                    <label class="field-label" for="f-email">Email Address <span>*</span></label>
+                    <input class="field-input" type="email" id="f-email" name="email" placeholder="you@example.com" autocomplete="email">
+                    <span class="field-error" id="err-email" role="alert">Please enter a valid email address.</span>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="field-group">
+                    <label class="field-label" for="f-phone">Phone Number <span style="color:var(--muted);font-size:0.6rem;">(Optional)</span></label>
+                    <input class="field-input" type="tel" id="f-phone" name="phone" placeholder="+1 (555) 000 0000" autocomplete="tel">
+                  </div>
+                  <div class="field-group">
+                    <label class="field-label" for="f-subject">Subject <span>*</span></label>
+                    <div class="select-wrapper">
+                      <select class="field-select" id="f-subject" name="subject">
+                        <option value="">Select a topic…</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="membership">Membership</option>
+                        <option value="training">Personal Training</option>
+                        <option value="classes">Classes</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                      </select>
+                      <i class="fa fa-chevron-down chevron"></i>
+                    </div>
+                    <span class="field-error" id="err-subject" role="alert">Please select a subject.</span>
+                  </div>
+                </div>
+
+                <div class="field-group">
+                  <label class="field-label" for="f-message">Message <span>*</span></label>
+                  <textarea class="field-textarea" id="f-message" name="message" placeholder="Tell us how we can help you…" maxlength="500"></textarea>
+                  <div class="char-counter" id="char-counter">0 / 500</div>
+                  <span class="field-error" id="err-message" role="alert">Message must be at least 20 characters.</span>
+                </div>
+
+                <button type="submit" class="btn-primary btn-submit">
+                  <i class="fa-solid fa-paper-plane"></i>
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="form-success" id="form-success">
+            <div class="success-icon"><i class="fa-solid fa-check"></i></div>
+            <div class="success-title">Message Sent!</div>
+            <p class="success-sub">We received your message and a real human will get back to you within 24 hours.</p>
+            <button class="btn-ghost" onclick="resetForm()" style="margin-top:8px;">
+              Send Another
+            </button>
+          </div>
+        </div>
+
+        <div class="info-stack">
+          <div class="info-stack-card reveal-right delay-1">
+            <h3 class="info-stack-title">Why Contact Us?</h3>
+            <ul class="why-list">
+              <li>Book a free gym tour</li>
+              <li>Ask about memberships &amp; pricing</li>
+              <li>Speak directly with a trainer</li>
+              <li>Corporate &amp; group inquiries</li>
+            </ul>
+          </div>
+
+          <div class="info-stack-card reveal-right delay-2">
+            <h3 class="info-stack-title">Follow the Journey</h3>
+            <div class="social-links">
+              <a href="#" class="social-link">
+                <div class="social-link-icon"><i class="fab fa-instagram"></i></div>
+                <div class="social-link-info">
+                  <div class="social-link-name">Instagram</div>
+                  <div class="social-link-handle">@ironpeakfitness</div>
+                </div>
+                <i class="fa fa-arrow-right social-link-arrow"></i>
+              </a>
+              <a href="#" class="social-link">
+                <div class="social-link-icon"><i class="fab fa-facebook-f"></i></div>
+                <div class="social-link-info">
+                  <div class="social-link-name">Facebook</div>
+                  <div class="social-link-handle">/ironpeakfitness</div>
+                </div>
+                <i class="fa fa-arrow-right social-link-arrow"></i>
+              </a>
+              <a href="#" class="social-link">
+                <div class="social-link-icon"><i class="fab fa-tiktok"></i></div>
+                <div class="social-link-info">
+                  <div class="social-link-name">TikTok</div>
+                  <div class="social-link-handle">@ironpeak</div>
+                </div>
+                <i class="fa fa-arrow-right social-link-arrow"></i>
+              </a>
+              <a href="#" class="social-link">
+                <div class="social-link-icon"><i class="fab fa-youtube"></i></div>
+                <div class="social-link-info">
+                  <div class="social-link-name">YouTube</div>
+                  <div class="social-link-handle">Iron Peak Fitness</div>
+                </div>
+                <i class="fa fa-arrow-right social-link-arrow"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="info-stack-card response-badge reveal-right delay-3">
+            <div class="response-time">&lt; 24hrs</div>
+            <div class="response-label">Average Response Time</div>
+            <p class="response-note">"Every message deserves a real answer."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="map-section">
+      <div class="map-header reveal-up">
+        <div class="section-label">Location</div>
+        <h2 class="section-title">Find <span>Us</span></h2>
+      </div>
+
+      <div class="map-panel reveal">
+        <div class="map-bracket tl">
+          <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 28 L2 2 L28 2" stroke="rgba(168,85,247,0.4)" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="map-bracket tr">
+          <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 28 L2 2 L28 2" stroke="rgba(168,85,247,0.4)" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="map-bracket bl">
+          <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 28 L2 2 L28 2" stroke="rgba(168,85,247,0.4)" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="map-bracket br">
+          <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 28 L2 2 L28 2" stroke="rgba(168,85,247,0.4)" stroke-width="1.5"/>
+          </svg>
+        </div>
+
+        <div class="map-content">
+          <div class="map-pin-wrap">
+            <div class="map-ripple"></div>
+            <div class="map-ripple"></div>
+            <div class="map-ripple"></div>
+            <i class="fa-solid fa-location-dot map-pin-icon"></i>
+          </div>
+          <div class="map-gym-name">IRON PEAK FITNESS</div>
+          <div class="map-address">14 Iron District, City Center</div>
+          <a href="#" class="btn-ghost" style="margin-top:8px; padding: 10px 24px; font-size:0.78rem;">
+            <i class="fa-solid fa-diamond-turn-right"></i>
+            Get Directions
+          </a>
+        </div>
+      </div>
+
+      <p class="map-note reveal-up delay-2">
+        <i class="fa-solid fa-circle-info" style="color:var(--purple-light); margin-right:6px;"></i>
+        Interactive map coming in Project 2 with Google Maps API integration.
+      </p>
+    </section>
+
+    <section id="hours-section">
+      <div class="hours-grid">
+        <div class="reveal-left">
+          <div class="section-label">Schedule</div>
+          <h2 class="section-title">We're Open <span>Every Day</span></h2>
+          <p class="hours-left-text">
+            Iron Peak Fitness is open 365 days a year so your momentum never has to stop.
+            Whether you prefer early morning lifts before the world wakes up or late-night
+            sessions when the gym is all yours — we're here.
+          </p>
+        </div>
+
+        <div class="hours-card reveal-right">
+          <div id="hours-rows"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq-section">
+      <div class="faq-header reveal-up">
+        <div class="section-label" style="justify-content:center;">Common Questions</div>
+        <h2 class="section-title">Quick <span>Answers</span></h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item reveal-up delay-1">
+          <div class="faq-question" aria-expanded="false" role="button" tabindex="0">
+            <span class="faq-q-text">How do I book a free tour?</span>
+            <i class="fa fa-chevron-down faq-chevron"></i>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Simply fill out the contact form above, select "General Inquiry" as your subject,
+              and mention you'd like a tour. Alternatively, call us directly at +1 (555) 024 PEAK
+              and we'll schedule a time that works for you — usually within 48 hours.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal-up delay-2">
+          <div class="faq-question" aria-expanded="false" role="button" tabindex="0">
+            <span class="faq-q-text">Can I visit before joining?</span>
+            <i class="fa fa-chevron-down faq-chevron"></i>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Absolutely. We welcome drop-in visits during all operating hours. We'll give you a
+              full walkthrough of the facilities, introduce you to our trainers, and answer any
+              questions you have — no pressure, no commitment required.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal-up delay-3">
+          <div class="faq-question" aria-expanded="false" role="button" tabindex="0">
+            <span class="faq-q-text">Do you offer corporate memberships?</span>
+            <i class="fa fa-chevron-down faq-chevron"></i>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Yes — we have tailored corporate wellness packages for teams of any size. These include
+              group rates, flexible scheduling, dedicated locker space, and optional on-site trainer
+              sessions. Use the contact form and select "Corporate Memberships" to get a custom quote.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal-up delay-4">
+          <div class="faq-question" aria-expanded="false" role="button" tabindex="0">
+            <span class="faq-q-text">How quickly will you respond to my message?</span>
+            <i class="fa fa-chevron-down faq-chevron"></i>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Our average response time is under 24 hours, Monday through Sunday. Messages sent
+              before 6PM typically receive a same-day reply. Urgent queries can always be directed
+              to our phone line for an immediate response from the front desk.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta-section">
+      <div class="cta-grid-bg"></div>
+      <div class="cta-glow"></div>
+      <div class="cta-content">
+        <h2 class="cta-title reveal">Come See <span>Iron Peak.</span></h2>
+        <p class="cta-subtitle reveal delay-2">
+          <em>"Walk in. Feel the difference. Leave a legend."</em>
+        </p>
+        <div class="cta-buttons reveal delay-3">
+          <a href="#contact-main" class="btn-primary">
+            <i class="fa-solid fa-calendar-check"></i>
+            Book a Free Tour
+          </a>
+          <a href="pricing.html" class="btn-ghost">
+            View Memberships
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo">Iron<span>Peak</span></div>
+        <p>Where ordinary people build extraordinary bodies. Premium facilities, elite coaching, relentless community.</p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="footer-social"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="footer-social"><i class="fab fa-tiktok"></i></a>
+          <a href="#" class="footer-social"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="#">Strength Training</a></li>
+          <li><a href="#">HIIT Classes</a></li>
+          <li><a href="#">Yoga &amp; Mobility</a></li>
+          <li><a href="#">Personal Training</a></li>
+          <li><a href="#">Boxing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="trainers.html">Our Trainers</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">14 Iron District</a></li>
+          <li><a href="tel:+15550247325">+1 (555) 024 PEAK</a></li>
+          <li><a href="mailto:hello@ironpeak.com">hello@ironpeak.com</a></li>
+          <li><a href="#">Mon–Sun: 5AM–11PM</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <span>© 2024 Iron Peak Fitness. All rights reserved.</span>
+      <span>Privacy Policy · Terms of Service</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/schedule.js"></script>
+  <script src="js/accordion.js"></script>
+</body>
+</html>

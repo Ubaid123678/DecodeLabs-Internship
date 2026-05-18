@@ -1,0 +1,42 @@
+@media (max-width: 1024px) {
+  .container { padding: 0 40px; }
+  .features-grid { grid-template-columns: repeat(2, 1fr); }
+  .trainers-grid { grid-template-columns: repeat(2, 1fr); }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+  .pricing-card.featured { transform: none; }
+  .story-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .navbar { padding: 20px 24px; }
+  .navbar.scrolled { padding: 14px 24px; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  .container { padding: 0 24px; }
+  .page-hero { min-height: 55vh; }
+  .hero-stats { display: none; }
+  .hero-scroll-hint { display: none; }
+  section { padding: 80px 0; }
+  .classes-grid { grid-template-columns: 1fr; }
+  .pricing-grid { grid-template-columns: 1fr; }
+  .mvv-grid { grid-template-columns: 1fr; }
+  .story-grid { gap: 40px; }
+  .timeline::before { left: 20px; }
+  .timeline-item { grid-template-columns: 40px 1fr; }
+  .timeline-item .timeline-year { grid-column: 1; justify-self: center; }
+  .timeline-item .timeline-content { grid-column: 2; }
+  .cta-btns { flex-direction: column; align-items: center; }
+  .auth-left { display: none; }
+  .auth-right { width: 100%; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .hero-title { font-size: clamp(3.5rem, 18vw, 8rem); }
+  .values-row { grid-template-columns: repeat(2, 1fr); }
+  .counters-grid { grid-template-columns: 1fr; }
+  .auth-tabs button { font-size: 0.65rem; padding: 12px 20px; }
+  .social-btns { flex-direction: column; }
+}
