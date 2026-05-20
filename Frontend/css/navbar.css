@@ -43,7 +43,7 @@
   font-weight: 500;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: var(--muted);
+  color: rgba(248, 244, 255, 0.82);
   position: relative;
   transition: color 0.3s;
 }
