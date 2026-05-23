@@ -3,9 +3,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
+  text-align: left;
   position: relative;
   overflow: hidden;
   padding: 10rem 4rem 6rem;
+}
+
+.hero-bg-img {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.35;
 }
 
 .hero-bg {
@@ -87,7 +97,10 @@
 .hero-inner {
   position: relative;
   z-index: 2;
-  max-width: 900px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 60px;
+  width: 100%;
 }
 
 .breadcrumb {
@@ -380,12 +393,7 @@
 
 .card-book:hover { gap: 10px; color: var(--accent); }
 
-.card-1 .card-bg { background: linear-gradient(160deg, #1a0333 0%, #050508 100%); }
-.card-2 .card-bg { background: linear-gradient(160deg, #0d1a0d 0%, #050508 100%); }
-.card-3 .card-bg { background: linear-gradient(160deg, #1a1400 0%, #050508 100%); }
-.card-4 .card-bg { background: linear-gradient(160deg, #0d0533 0%, #050508 100%); }
-.card-5 .card-bg { background: linear-gradient(160deg, #1a0d0d 0%, #050508 100%); }
-.card-6 .card-bg { background: linear-gradient(160deg, #001a1a 0%, #050508 100%); }
+
 
 .schedule-section {
   padding: 7rem 4rem;

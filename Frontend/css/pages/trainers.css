@@ -20,7 +20,8 @@
   min-height: 70vh;
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  text-align: left;
   overflow: hidden;
   background: var(--black);
 }
@@ -114,7 +115,10 @@
 .hero-content {
   position: relative;
   z-index: 2;
-  padding: 8rem 3rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8rem 60px 4rem;
+  width: 100%;
 }
 
 .breadcrumb {
