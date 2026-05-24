@@ -7,6 +7,7 @@ const TRAINERS = [
     clients: '240+',
     rating: '4.9*',
     grad: 'grad-1',
+    image: 'marcus-cole.jpg',
     bio: 'Marcus Cole has spent eight years engineering elite athletic performance at Iron Peak. Beginning as a competitive powerlifter, he channelled that experience into a coaching philosophy that fuses raw intensity with intelligent programming. His training blocks have produced measurable PRs for hundreds of members across every fitness level.',
     achievements: [
       'NSCA Certified Strength & Conditioning Specialist',
@@ -25,6 +26,7 @@ const TRAINERS = [
     clients: '180+',
     rating: '5.0*',
     grad: 'grad-2',
+    image: 'aria-sharma.jpg',
     bio: 'Aria weaves ancient yogic wisdom with contemporary wellness science across every session she leads. Her classes leave students stronger in body and quieter in mind. Over a decade of teaching has given her an unmatched ability to read a room and adapt the practice to wherever students are on a given day.',
     achievements: [
       'RYT-500 Registered Yoga Teacher',
@@ -43,6 +45,7 @@ const TRAINERS = [
     clients: '210+',
     rating: '4.8*',
     grad: 'grad-3',
+    image: 'zara-knox.jpg',
     bio: 'Zara turns ordinary workouts into extraordinary breakthroughs with a coaching style that is as precise as it is electric. Her CrossFit programming has redefined what members think is possible. She holds CF-L3 certification and has competed at the Sanctionals level, bringing that competitive edge into every class.',
     achievements: [
       'CrossFit Level 3 Trainer (CF-L3)',
@@ -61,6 +64,7 @@ const TRAINERS = [
     clients: '155+',
     rating: '4.9*',
     grad: 'grad-4',
+    image: 'leon-voss.jpg',
     bio: 'Leon decodes the science of eating to fuel peak performance across every body type and goal. His individualized nutrition plans are the secret weapon behind Iron Peak\'s best transformations. He holds an MSc in Sports Nutrition and is co-creator of the Iron Peak 12-Week Body Recomposition Protocol.',
     achievements: [
       'MSc Sports Nutrition - Loughborough University',
@@ -79,6 +83,7 @@ const TRAINERS = [
     clients: '130+',
     rating: '4.7*',
     grad: 'grad-5',
+    image: 'damon-pierce.jpg',
     bio: 'Damon brings pro-fighter discipline to every session, regardless of whether the client steps into a ring or not. From beginners to competitive athletes, his combat conditioning builds toughness inside and out. Damon fought professionally at middleweight before transitioning to coaching full-time in 2018.',
     achievements: [
       'Former Professional MMA Fighter (8-2 Record)',
@@ -97,6 +102,7 @@ const TRAINERS = [
     clients: '175+',
     rating: '4.8*',
     grad: 'grad-6',
+    image: 'selena-park.jpg',
     bio: 'Selena\'s high-energy HIIT sessions are legendary at Iron Peak, drawing a consistent waitlist every week. Her cardio protocols maximise calorie burn while preserving lean muscle at every fitness level. She designed Iron Peak\'s signature 45-minute Cardio Ignite class, which has become the gym\'s most-attended offering.',
     achievements: [
       'ACE Certified Group Fitness Instructor',
@@ -115,6 +121,7 @@ const TRAINERS = [
     clients: '200+',
     rating: '4.9*',
     grad: 'grad-7',
+    image: 'rhys-calloway.jpg',
     bio: 'Rhys has coached national-level powerlifters and weekend warriors alike with equal precision and care. His no-nonsense periodization builds the kind of strength that lasts a lifetime. Nine years on the platform as both competitor and coach give him a uniquely tactical perspective on progressive overload.',
     achievements: [
       'IPF Certified Powerlifting Coach',
@@ -133,6 +140,7 @@ const TRAINERS = [
     clients: '160+',
     rating: '5.0*',
     grad: 'grad-8',
+    image: 'nadia-osei.jpg',
     bio: 'Nadia specialises in restorative yoga and active recovery protocols that help athletes perform longer and recover faster between sessions. Her holistic approach draws from somatic movement, breathwork, and evidence-based recovery science. She is the architect of Iron Peak\'s weekly Recovery Lab programme.',
     achievements: [
       'RYT-500 with Restorative Specialisation',
@@ -182,6 +190,7 @@ function initModal() {
 
     const visual = document.querySelector('.modal-visual');
     visual.className = `modal-visual ${trainer.grad}`;
+    visual.style.background = `linear-gradient(135deg, rgba(15, 10, 30, 0.20), rgba(26, 10, 46, 0.30)), url('assets/images/trainers/${trainer.image}') center/cover no-repeat`;
 
     overlay.classList.add('open');
     document.body.style.overflow = 'hidden';

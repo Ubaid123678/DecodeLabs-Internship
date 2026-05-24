@@ -26,6 +26,14 @@
   background: var(--black);
 }
 
+.hero-bg-img {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+}
+
 .hero-bg-text {
   position: absolute;
   bottom: -2rem;
@@ -341,7 +349,7 @@
 }
 
 .trainer-photo {
-  height: 340px;
+  height: 380px;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -352,18 +360,14 @@
 .trainer-photo-bg {
   position: absolute;
   inset: 0;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.trainer-icon {
-  font-size: 7rem;
-  color: rgba(168, 85, 247, 0.12);
-  position: relative;
-  z-index: 1;
-  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.trainer-card:hover .trainer-icon {
-  transform: scale(1.08);
+.trainer-card:hover .trainer-photo-bg {
+  transform: scale(1.06);
 }
 
 .photo-overlay {
@@ -562,13 +566,21 @@
   align-items: center;
   justify-content: center;
   background: linear-gradient(145deg, #0f062a, #1a0a2e);
+  overflow: hidden;
 }
 
-.spotlight-icon {
-  font-size: 14rem;
-  color: rgba(168, 85, 247, 0.08);
-  position: relative;
-  z-index: 1;
+.spotlight-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.spotlight-visual:hover .spotlight-bg {
+  transform: scale(1.05);
 }
 
 .corner-bracket {
@@ -1046,13 +1058,9 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-}
-
-.modal-icon {
-  font-size: 9rem;
-  color: rgba(168, 85, 247, 0.1);
-  position: relative;
-  z-index: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .modal-close {
