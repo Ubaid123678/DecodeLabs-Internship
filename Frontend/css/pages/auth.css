@@ -24,6 +24,11 @@ body {
   justify-content: space-between;
   padding: 1.2rem 2.5rem;
   background: transparent;
+  pointer-events: none;
+}
+
+.auth-header .navbar > * {
+  pointer-events: auto;
 }
 
 .auth-header .nav-logo {
@@ -332,6 +337,9 @@ body {
   gap: 0;
   margin-bottom: 2.5rem;
   border-bottom: 1px solid var(--glass-border);
+  position: relative;
+  z-index: 20;
+  pointer-events: auto;
 }
 
 .tab-btn {
@@ -347,6 +355,7 @@ body {
   padding: 0.8rem 0;
   position: relative;
   transition: color 0.3s;
+  z-index: 21;
 }
 
 .tab-btn.active { color: var(--white); }
@@ -373,6 +382,7 @@ body {
   transform: translateX(30px);
   pointer-events: none;
   transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 1;
 }
 
 .form-panel.active {
@@ -380,6 +390,7 @@ body {
   opacity: 1;
   transform: translateX(0);
   pointer-events: all;
+  z-index: 2;
 }
 
 .form-panel.exit-left {
