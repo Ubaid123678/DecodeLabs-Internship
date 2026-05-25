@@ -8,6 +8,8 @@
 
 **Iron Peak Fitness** is a professional, fully responsive gym & fitness website built as **Project 1** of a 3-phase Full Stack Development program. This is a pure frontend project — no backend, no database, no frameworks.
 
+the preview for the project is here https://thunderous-lamington-881818.netlify.app/
+
 | Detail | Value |
 |---|---|
 | Project Name | Iron Peak Fitness |
